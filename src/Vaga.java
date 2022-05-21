@@ -36,4 +36,8 @@ public class Vaga {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public String listarVaga(){
+        return ("Id: " + this.getId() + " Vaga: " + this.getTitulo() + " Descricao: " + this.getDescricao());
+    }
 }

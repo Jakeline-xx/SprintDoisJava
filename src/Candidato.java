@@ -15,17 +15,12 @@ public class Candidato {
         this.endereco = endereco;
     }
 
-    public Inscricao inscreverNaVaga(Vaga vaga){
-        return new Inscricao(vaga, this);
-    }
-
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-        System.out.println("Novo id: " + this.id);
     }
 
     public String getNome() {
@@ -58,5 +53,13 @@ public class Candidato {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public String listarCandidato(){
+        return ("Id: " + this.getId() + " Nome: " + this.getNome());
+    }
+
+    public Inscricao inscreverNaVaga(Vaga vaga){
+        return new Inscricao(vaga, this);
     }
 }

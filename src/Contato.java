@@ -1,12 +1,22 @@
 public class Contato {
+    private int id;
     private String email;
     private int telefone;
 
     Contato(){};
 
-    public Contato(String email, int telefone) {
+    public Contato(int id, String email, int telefone) {
+        this.id = id;
         this.email = email;
         this.telefone = telefone;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getEmail() {

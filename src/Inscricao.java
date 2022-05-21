@@ -47,4 +47,20 @@ public class Inscricao {
     public void setFeedback(FeedBack feedback) {
         this.feedback = feedback;
     }
+
+    public String listarInscricoes(){
+        return ("Id: " + this.id + " Vaga: "
+                + this.vaga.getTitulo()
+                + " Id do Candidato: "
+                + this.candidato.getId()
+                + " Feedback: "
+                + this.feedback.getDescricao());
+    }
+
+    public String listarInscricoesSemFeedback(){
+        return ("Id: " + this.id + " Vaga: "
+                + this.vaga.getTitulo()
+                + " Id do Candidato: "
+                + this.candidato.getId());
+    }
 }

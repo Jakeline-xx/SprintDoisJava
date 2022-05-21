@@ -1,22 +1,32 @@
 public class Endereco {
-    private String rua;
+    private int id;
+    private String logradouro;
     private int numero;
     private String bairro;
 
     Endereco(){};
 
-    public Endereco(String rua, int numero, String bairro) {
-        this.rua = rua;
+    public Endereco(int id, String logradouro, int numero, String bairro) {
+        this.id = id;
+        this.logradouro = logradouro;
         this.numero = numero;
         this.bairro = bairro;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getRua() {
-        return rua;
+        return logradouro;
     }
 
     public void setRua(String rua) {
-        this.rua = rua;
+        this.logradouro = rua;
     }
 
     public int getNumero() {
