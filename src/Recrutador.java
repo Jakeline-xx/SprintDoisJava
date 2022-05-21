@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Recrutador {
     private int id;
     private String nome;
-    private ArrayList<Vaga> vagas = new ArrayList<>();
 
     Recrutador(){};
 
@@ -11,15 +10,6 @@ public class Recrutador {
         this.id = id;
         this.nome = nome;
     }
-
-    public void darFeedback(int id){
-        for (Vaga vaga : vagas) {
-            if (vaga.getCandidatos().get()){
-
-            }
-        }
-    }
-
     public int getId() {
         return id;
     }
@@ -36,11 +26,7 @@ public class Recrutador {
         this.nome = nome;
     }
 
-    public ArrayList<Vaga> getVagas() {
-        return vagas;
-    }
-
-    public void setVagas(ArrayList<Vaga> vagas) {
-        this.vagas = vagas;
+    public void darFeedback(Inscricao inscricao, String descricao){
+        inscricao.setFeedback(new FeedBack(descricao));
     }
 }

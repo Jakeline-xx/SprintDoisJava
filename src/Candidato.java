@@ -15,8 +15,8 @@ public class Candidato {
         this.endereco = endereco;
     }
 
-    public void inscreverNaVaga(){
-
+    public Inscricao inscreverNaVaga(Vaga vaga){
+        return new Inscricao(vaga, this);
     }
 
     public int getId() {
@@ -25,6 +25,7 @@ public class Candidato {
 
     public void setId(int id) {
         this.id = id;
+        System.out.println("Novo id: " + this.id);
     }
 
     public String getNome() {

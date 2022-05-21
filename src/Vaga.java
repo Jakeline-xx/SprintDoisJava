@@ -4,7 +4,6 @@ public class Vaga {
     private int id;
     private String titulo;
     private String descricao;
-    private ArrayList<Candidato> candidatos = new ArrayList<>();
 
     Vaga(){};
 
@@ -36,13 +35,5 @@ public class Vaga {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public ArrayList<Candidato> getCandidatos() {
-        return candidatos;
-    }
-
-    public void setCandidatos(ArrayList<Candidato> candidatos) {
-        this.candidatos = candidatos;
     }
 }
