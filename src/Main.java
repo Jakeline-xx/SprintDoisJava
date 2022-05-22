@@ -3,6 +3,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+//ESTE PROJETO FOI REALIZADO PELO INTELIJ, POR ISSO TALVEZ DÊ ALGUMA DIVERGENCIA NO ECLIPSE, POR EXEMPLO
+//QUANTO A UTILIZACAO DE CARACTERES ESPECIAIS NO TERMINAL
+
 public class Main {
     public static void main(String[] args) throws IOException{
         Scanner ler = new Scanner(System.in);
@@ -142,7 +146,9 @@ public class Main {
                 }
 
             }else if (opcao == 5) {
-                //FALTA FAZER ESSE METODO
+                //FALTA FAZER ESSE METODO, MAS AINDA ESTAMOS PENSANDO NA MELHOR FORMA.
+                //POR ISSO, FIZEMOS O TESTE DA CLASSE RECRUTADOR E CLASSE INSCRICAO QUE ESTÁ COMENTADO ABAIXO SEM
+                // UTILIZAÇÃO DE METODO.
 
             }else if (opcao == 6) {
                 for (Inscricao i :listaInscricoes) {
@@ -159,25 +165,21 @@ public class Main {
 
 
 
-
-
-
-
 //        Vaga vagaJr = new Vaga(1, "Dev Jr", "Ser um Desenvolvedor Júnior na IBM");
 //        Vaga vagaPl = new Vaga(2, "Dev Pleno", "Ser um Desenvolvedor Pleno na IBM");
 //        Vaga vagaSr = new Vaga(3, "Dev Sênior", "Ser um Desenvolvedor Sênior na IBM");
 //
 //        Candidato candidatoUm = new Candidato(1, "Jakeline", 21,
-//                                                new Contato("jakeline@jake", 1196666),
-//                                                new Endereco("Rua Oito", 23, "Guaianases"));
+//                                                new Contato(1, "jakeline@jake", 1196666),
+//                                                new Endereco(1, "Rua Oito", 23, "Guaianases"));
 //
 //        Candidato candidatoDois = new Candidato(2, "Lucas", 24,
-//                                                new Contato("lucas@lucas", 1190000),
-//                                                new Endereco("Rua Nove", 222, "Robru"));
+//                                                new Contato(2, "lucas@lucas", 1190000),
+//                                                new Endereco(2, "Rua Nove", 222, "Robru"));
 //
 //        Candidato candidatoTres = new Candidato(3, "Gabriel", 22,
-//                                                new Contato("gabriel@gab", 1198888),
-//                                                new Endereco("Rua Dez", 33, "Itaquera"));
+//                                                new Contato(3, "gabriel@gab", 1198888),
+//                                                new Endereco(3, "Rua Dez", 33, "Itaquera"));
 //
 //
 //
