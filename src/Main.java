@@ -9,7 +9,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException{
-        Scanner ler = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in).useDelimiter("\n");
+
         ArrayList<Vaga> listaVagas = new ArrayList<>();
         ArrayList<Candidato> listaCandidatos = new ArrayList<>();
         ArrayList<Endereco> listaEnderecos = new ArrayList<>();
